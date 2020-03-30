@@ -2,3 +2,30 @@
   margin: 0;
   padding: 0;
 }
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+div p {
+
+  display: inline;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  font-size: 20px;
+  text-overflow: ellipsis;
+}
+
+div img {
+  margin: auto;
+}
